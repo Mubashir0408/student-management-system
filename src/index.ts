@@ -81,7 +81,9 @@ function searchById(id: number) {
 
 function deleteStudent(id: number) {
     for (let i = 0; i < students.length; i++) {
-        if (students[i].id === id) {
+        const student = students[i];
+
+        if (student && student.id === id) {
             students.splice(i, 1);
             break;
         }
@@ -96,7 +98,12 @@ function updateCgpa(id: number, newCgpa: number) {
     }
 }
 function highestCgpa() {
-    let highest = students[0];
+    if (students.length === 0) {
+        console.log("No students found.");
+        return;
+    }
+
+    let highest = students[0]!;
 
     for (const student of students) {
         if (student.cgpa > highest.cgpa) {
@@ -106,3 +113,21 @@ function highestCgpa() {
 
     console.log(highest);
 }
+addStudent(st1);
+addStudent(st2);
+addStudent(st3);
+addStudent(st4);
+addStudent(st5);
+showStudents();
+
+searchById(3);
+
+updateCgpa(3, 3.9);
+
+showStudents();
+
+deleteStudent(2);
+
+showStudents();
+console.log(students.length);
+highestCgpa();
