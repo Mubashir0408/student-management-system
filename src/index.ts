@@ -66,3 +66,24 @@ function showStudents() {
     }
 }
 
+showStudents();
+
+function addStudent(student: Student) {
+    students.push(student);
+}
+function searchById(id: number) {
+    for (const student of students) {
+        if (student.id === id) {
+            console.log(student);
+        }
+    }
+}
+
+function deleteStudent(id: number) {
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].id === id) {
+            students.splice(i, 1);
+            break;
+        }
+    }
+}
