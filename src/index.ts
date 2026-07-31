@@ -87,3 +87,22 @@ function deleteStudent(id: number) {
         }
     }
 }
+function updateCgpa(id: number, newCgpa: number) {
+    for (const student of students) {
+        if (student.id === id) {
+            student.cgpa = newCgpa;
+            break;
+        }
+    }
+}
+function highestCgpa() {
+    let highest = students[0];
+
+    for (const student of students) {
+        if (student.cgpa > highest.cgpa) {
+            highest = student;
+        }
+    }
+
+    console.log(highest);
+}
