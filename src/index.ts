@@ -123,7 +123,7 @@ showStudents();
 searchById(3);
 
 updateCgpa(3, 3.9);
-
+updateCgpa(4, 2.8);
 showStudents();
 
 deleteStudent(2);
