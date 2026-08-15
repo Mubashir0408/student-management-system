@@ -9,7 +9,14 @@ const str1:student={
     rollno:1,
     subjects: ["english","maths","urdu"]
 }
-
+//maually printing it
 console.log(str1.name);
 console.log(str1.rollno);
 console.log(str1.subjects);
+console.log("After updating")
+//updating it
+str1.rollno=4
+str1.subjects=["physics"]
+//printing the updated object value
+
+console.log(str1)
