@@ -20,3 +20,15 @@ str1.subjects=["physics"]
 //printing the updated object value
 
 console.log(str1)
+
+type teachers={
+    name: string
+    subject:string 
+    department:string
+}
+
+const updateTeacher = (updates: Partial<Teacher>) => {
+    console.log(updates);
+};
+
+updateTeacher({name:"saad"})
