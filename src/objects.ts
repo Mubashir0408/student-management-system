@@ -32,11 +32,19 @@ const updateTeacher = (updates: Partial<teachers>) => {
 };
 
 updateTeacher({name:"saad"})
-
+//required
 const RequiredTeacher=(update: Required<teachers>)=> {
     console.log(update);
 }
 
-
-
 RequiredTeacher({name:"fahad",subject:"maths",department:"cs"})
+
+
+type tec = Pick<teachers,"name"|"subject"|"department">
+
+const teacher1: tec = {
+    name: "Saad",
+    subject: "Math",
+    department: "CS"
+};
+console.log(teacher1);
