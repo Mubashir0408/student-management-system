@@ -26,9 +26,17 @@ type teachers={
     subject:string 
     department:string
 }
-
-const updateTeacher = (updates: Partial<Teacher>) => {
+//partial
+const updateTeacher = (updates: Partial<teachers>) => {
     console.log(updates);
 };
 
 updateTeacher({name:"saad"})
+
+const RequiredTeacher=(update: Required<teachers>)=> {
+    console.log(update);
+}
+
+
+
+RequiredTeacher({name:"fahad",subject:"maths",department:"cs"})
