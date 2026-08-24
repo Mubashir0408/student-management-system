@@ -39,7 +39,7 @@ const RequiredTeacher=(update: Required<teachers>)=> {
 
 RequiredTeacher({name:"fahad",subject:"maths",department:"cs"})
 
-
+//pick
 type tec = Pick<teachers,"name"|"subject"|"department">
 
 const teacher1: tec = {
