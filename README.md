@@ -1,12 +1,23 @@
-# Student Management System (SMS)
+TypeScript Practice
 
-A simple console-based Student Management System built with TypeScript to practice TypeScript fundamentals such as types, arrays, objects, enums, tuples, functions, and loops.
+A collection of my TypeScript learning and practice code, created while learning TypeScript fundamentals and object-oriented programming.
 
-## Features
-
-* Add students
-* Display all students
-* Search a student by ID
-* Update a student's CGPA
-* Delete a student by ID
-* Find the student with the highest CGPA
+Topics Covered
+TypeScript types
+Functions
+Objects
+Interfaces
+Utility types
+Partial
+Required
+Pick
+Classes
+Constructors
+this
+new
+Inheritance
+extends
+super()
+static
+Access modifiers
+Generics
